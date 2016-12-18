@@ -1,0 +1,49 @@
+body {
+	/*background: url("../images/stars.jpg");*/
+	background: url("../images/grey_@2X.png");
+	
+	font-family: 'Mystery Quest', cursive;
+	
+	/*letter-spacing: 1.5px;*/
+}
+
+p {
+	font-family: 'Rum Raisin', sans-serif;
+	/*font-family: 'Aclonica', sans-serif;*/
+}
+
+.jumbotron {
+   background: rgba(247, 231, 150, 0.5); 
+}
+
+#padding {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#headline {
+	letter-spacing: 1.75px;
+	color: rgb(249, 156, 62);
+}
+
+.full-width {
+	width: 100%;
+}
+
+.panel-title {
+	font-size: 20pt;
+	letter-spacing: 1.1px;
+}
+
+.panel {
+	background: rgba(255, 255, 255, 0)!important;
+}
+
+.left-panel {
+	background: rgba(223, 240, 216, 0.75)!important;
+}
+
+.right-panel {
+	background: rgba(217, 237, 247, 0.75)!important;
+}
+

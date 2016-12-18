@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crystals Collector</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Aclonica|Mystery+Quest|Paprika|Rum+Raisin" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- jewel photos from http://www.multicolour.com/
+
+    2. The player will have to guess the answer, just like in Hangman. This time, though, the player will guess with numbers instead of letters. 
+
+    3. Here's how the app works:
+    * There will be four crystals displayed as buttons on the page.
+
+    * The player will be shown a random number at the start of the game.
+
+    * When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+        * Your game will hide this amount until the player clicks a crystal.
+        * When they do click one, update the player's score counter.
+
+    * The player wins if their total score matches the random number from the beginning of the game.
+
+    * The player loses if their score goes above the random number.
+
+    * The game restarts whenever the player wins or loses.
+        * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+
+    * The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+
+ -->
+</head>
+
+<body>
+    <div class="row">
+        <div class="jumbotron" id="padding">
+            <h1 class="text-center" id="headline">Crystals Collector</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-sm-3 full-width">
+                        <div class="panel panel-success full-width">
+                            <div class="panel-heading left-panel">
+                                <h3 class="panel-title text-center">How to Play</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p id="instructions">Each of the 4 crystals have an unknown value. As you click on the crystals, a specific number of points will be added to the number in the "Your Current Score" box. Your goal is to NOT exceed the number displayed in the "Number to Match!" box. You win if your total score is equal to that number. If you exceed this number, you lose! Each time you play, the values of the crystals reset.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 full-width">
+                        <div class="panel panel-success full-width">
+                            <div class="panel-heading left-panel">
+                                <h3 class="panel-title text-center">Your Current Score</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <h1 id="current-score"></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading text-center right-panel">
+                                <h3 class="panel-title">Number to Match!</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <h1 id="number-to-match"></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading text-center right-panel">
+                                <h3 class="panel-title">Wins</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <h1 id="wins"></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading text-center right-panel">
+                                <h3 class="panel-title">Losses</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <h1 id="losses"></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 full-width">
+                        <a href="#"><img src="assets/images/blueCircle.jpg" class="" alt="saphire" /></a>
+                        <a href="#"><img src="assets/images/multiRectangle.jpg" class="" alt="multi-colored jewel" /></a>
+                        <a href="#"><img src="assets/images/yellowCircle.jpg" class="" alt="zircon" /></a>
+                        <a href="#"><img src="assets/images/pinkSquare.jpg" class="" alt="pink jewel" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js">
+    </script>
+</body>
+
+</html>
