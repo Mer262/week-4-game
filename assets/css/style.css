@@ -1,14 +1,13 @@
 body {
-	/*background: url("../images/stars.jpg");*/
 	background: url("../images/grey_@2X.png");
-	
 	font-family: 'Mystery Quest', cursive;
-	
-	/*letter-spacing: 1.5px;*/
+
 }
 
 p {
 	font-family: 'Rum Raisin', sans-serif;
+	font-size: 14pt;
+	color: #878787;
 	/*font-family: 'Aclonica', sans-serif;*/
 }
 
@@ -37,6 +36,19 @@ p {
 
 .panel {
 	background: rgba(255, 255, 255, 0)!important;
+	margin-bottom: 10px;
+}
+
+.blue-contents {
+	color: #31708F;
+}
+
+.panel-body {
+	padding: 0;
+}
+
+#padding {
+	padding: 8px;
 }
 
 .left-panel {
@@ -46,4 +58,12 @@ p {
 .right-panel {
 	background: rgba(217, 237, 247, 0.75)!important;
 }
+
+.well-sm {
+	background: rgba(247, 231, 150, 0.5); 
+	color: rgb(249, 156, 62);
+	letter-spacing: 1.1px;
+	font-size: 20pt;
+}
+
 

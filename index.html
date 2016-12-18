@@ -43,27 +43,13 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                <div class="row">
-                    <div class="col-sm-3 full-width">
-                        <div class="panel panel-success full-width">
-                            <div class="panel-heading left-panel">
-                                <h3 class="panel-title text-center">How to Play</h3>
-                            </div>
-                            <div class="panel-body">
-                                <p id="instructions">Each of the 4 crystals have an unknown value. As you click on the crystals, a specific number of points will be added to the number in the "Your Current Score" box. Your goal is to NOT exceed the number displayed in the "Number to Match!" box. You win if your total score is equal to that number. If you exceed this number, you lose! Each time you play, the values of the crystals reset.</p>
-                            </div>
+                <div class="col-sm-3 full-width">
+                    <div class="panel panel-success full-width">
+                        <div class="panel-heading left-panel">
+                            <h3 class="panel-title text-center">How to Play</h3>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 full-width">
-                        <div class="panel panel-success full-width">
-                            <div class="panel-heading left-panel">
-                                <h3 class="panel-title text-center">Your Current Score</h3>
-                            </div>
-                            <div class="panel-body text-center">
-                                <h1 id="current-score"></h1>
-                            </div>
+                        <div class="panel-body" id="padding">
+                            <p id="instructions">Each of the 4 crystals have an unknown value. As you click on the crystals, a specific number of points will be added to the number in the "Your Current Score" box. Your goal is to NOT exceed the number displayed in the "Number to Match!" box. You win if your total score is equal to that number. If you exceed this number, you lose! Each time you play, the values of the crystals reset.</p>
                         </div>
                     </div>
                 </div>
@@ -75,7 +61,7 @@
                             <div class="panel-heading text-center right-panel">
                                 <h3 class="panel-title">Number to Match!</h3>
                             </div>
-                            <div class="panel-body text-center">
+                            <div class="panel-body text-center blue-contents">
                                 <h1 id="number-to-match"></h1>
                             </div>
                         </div>
@@ -85,7 +71,7 @@
                             <div class="panel-heading text-center right-panel">
                                 <h3 class="panel-title">Wins</h3>
                             </div>
-                            <div class="panel-body text-center">
+                            <div class="panel-body text-center blue-contents">
                                 <h1 id="wins"></h1>
                             </div>
                         </div>
@@ -95,7 +81,7 @@
                             <div class="panel-heading text-center right-panel">
                                 <h3 class="panel-title">Losses</h3>
                             </div>
-                            <div class="panel-body text-center">
+                            <div class="panel-body text-center blue-contents">
                                 <h1 id="losses"></h1>
                             </div>
                         </div>
@@ -103,10 +89,24 @@
                 </div>
                 <div class="row">
                     <div class="col-md-9 full-width">
-                        <a href="#"><img src="assets/images/blueCircle.jpg" class="" alt="saphire" /></a>
-                        <a href="#"><img src="assets/images/multiRectangle.jpg" class="" alt="multi-colored jewel" /></a>
-                        <a href="#"><img src="assets/images/yellowCircle.jpg" class="" alt="zircon" /></a>
-                        <a href="#"><img src="assets/images/pinkSquare.jpg" class="" alt="pink jewel" /></a>
+                        <a href="#"><img src="assets/images/blueCircle.jpg" id="crystal-1" alt="saphire" /></a>
+                        <a href="#"><img src="assets/images/multiRectangle.jpg" id="crystal-2" alt="multi-colored jewel" /></a>
+                        <a href="#"><img src="assets/images/yellowCircle.jpg" id="crystal-3" alt="zircon" /></a>
+                        <a href="#"><img src="assets/images/pinkSquare.jpg" id="crystal-4" alt="pink jewel" /></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="well well-sm" id="score">Your Current Score:
+                        </div>
+                        <!-- <div class="panel panel-success">
+                            <div class="panel-heading left-panel">
+                                <h3 class="panel-title text-center">Your Current Score</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <h1 id="current-score"></h1>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
