@@ -25,6 +25,14 @@ p {
 	color: rgb(249, 156, 62);
 }
 
+#left-container {
+	width: 33%;
+}
+
+#right-container {
+	width: 66%;
+}
+
 .full-width {
 	width: 100%;
 }
@@ -64,6 +72,7 @@ p {
 	color: rgb(249, 156, 62);
 	letter-spacing: 1.1px;
 	font-size: 20pt;
+	border: 1px solid rgb(249, 156, 62);
 }
 
 
