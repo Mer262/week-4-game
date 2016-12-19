@@ -8,29 +8,45 @@ p {
 	font-family: 'Rum Raisin', sans-serif;
 	font-size: 14pt;
 	color: #878787;
+	line-height: 1.5;
 	/*font-family: 'Aclonica', sans-serif;*/
 }
 
 .jumbotron {
-   background: rgba(247, 231, 150, 0.5); 
+   background: rgba(247, 231, 150, 0.5);
+   padding-top: 10px;
+   padding-bottom: 10px; 
+}
+
+.col-sm-3 {
+	padding: 5px;
+}
+
+#no-padding {
+	padding-top: 0;
 }
 
 #padding {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #headline {
 	letter-spacing: 1.75px;
 	color: rgb(249, 156, 62);
+	font-size: 30pt;
 }
 
 #left-container {
 	width: 33%;
+	float: left;
 }
 
 #right-container {
 	width: 66%;
+	float: right;
 }
 
 .full-width {
@@ -38,7 +54,7 @@ p {
 }
 
 .panel-title {
-	font-size: 20pt;
+	/*font-size: 20pt;*/
 	letter-spacing: 1.1px;
 }
 
@@ -49,14 +65,12 @@ p {
 
 .blue-contents {
 	color: #31708F;
+	font-size: 24pt;
 }
 
 .panel-body {
-	padding: 0;
-}
+	padding: 5px;
 
-#padding {
-	padding: 8px;
 }
 
 .left-panel {
@@ -71,8 +85,9 @@ p {
 	background: rgba(247, 231, 150, 0.5); 
 	color: rgb(249, 156, 62);
 	letter-spacing: 1.1px;
-	font-size: 20pt;
+	/*font-size: 24pt;*/
 	border: 1px solid rgb(249, 156, 62);
+	margin-bottom: 5px;
 }
 
 
