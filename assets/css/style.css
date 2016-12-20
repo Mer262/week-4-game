@@ -9,7 +9,6 @@ p {
 	font-size: 14pt;
 	color: #878787;
 	line-height: 1.5;
-	/*font-family: 'Aclonica', sans-serif;*/
 }
 
 .jumbotron {
@@ -54,7 +53,6 @@ p {
 }
 
 .panel-title {
-	/*font-size: 20pt;*/
 	letter-spacing: 1.1px;
 }
 

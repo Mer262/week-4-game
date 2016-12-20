@@ -31,14 +31,6 @@
        // variable to store randomly-generated Number to Match
        var numToMatch;
 
-       var crystalValue;
-
-       // variable to store random number assigned to each jewel
-       var jewel1Value;
-       var jewel2Value;
-       var jewel3Value;
-       var jewel4Value;
-
        // variable to store accumulating total
        var runningTotal;
 
@@ -58,19 +50,16 @@
            numToMatch = Math.floor((Math.random() * 120) + 19);
 
            // generate a random value for each jewel
-           jewel1Value = Math.floor((Math.random() * 12) + 1);
-           jewel2Value = Math.floor((Math.random() * 12) + 1);
-           jewel3Value = Math.floor((Math.random() * 12) + 1);
-           jewel4Value = Math.floor((Math.random() * 12) + 1);
+           // setting attribute for elements on the DOM
+           $("#crystal-1").attr("data-crystal-value", Math.floor((Math.random() * 12) + 1));
+           $("#crystal-2").attr("data-crystal-value", Math.floor((Math.random() * 12) + 1));
+           $("#crystal-3").attr("data-crystal-value", Math.floor((Math.random() * 12) + 1));
+           $("#crystal-4").attr("data-crystal-value", Math.floor((Math.random() * 12) + 1));
 
            // write the values to each panel/well
            $("#score").text("Your Current Score:")
            $("#number-to-match").text(numToMatch);
 
-           console.log("jewel1Value: " + jewel1Value);
-           console.log("jewel2Value: " + jewel2Value);
-           console.log("jewel3Value: " + jewel3Value);
-           console.log("jewel4Value: " + jewel4Value);
 
        }
 
@@ -94,26 +83,12 @@
        // call function to reset game
        reset()
 
-
        $("#number-to-match").text(numToMatch);
 
-       $("#crystal-1").click(function() {
-           runningTotal = jewel1Value + runningTotal;
+       $(".crystal").click(function(event) {
+           console.log(event.target.getAttribute("data-crystal-value"));
+           runningTotal += parseInt(event.target.getAttribute("data-crystal-value")); 
            checks();
        });
 
-       $("#crystal-2").click(function() {
-           runningTotal = jewel2Value + runningTotal;
-           checks();
-       });
-
-       $("#crystal-3").click(function() {
-           runningTotal = jewel3Value + runningTotal;
-           checks();
-       });
-
-       $("#crystal-4").click(function() {
-           runningTotal = jewel4Value + runningTotal;
-           checks();
-       });
    });
